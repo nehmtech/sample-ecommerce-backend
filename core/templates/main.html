@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+
+    <title>Home Page</title>
+</head>
+<body>
+    <h1>Categories</h1>
+    {% for category in categories %}
+    <h3> {{ category.name }} </h3>
+    {% endfor %}
+
+    <h1>Latest Products</h1>
+
+    <div class="container">
+    {% for product in products %}
+
+    <div class="card">
+        <img src = "{{ product.image.url }}" alt = "{{ product.name }}">  
+        
+        <div class="details">
+        <p>Name: {{ product.name }} </p>
+        <p>Price: {{ product.price }} </p>
+        <p>Stock: {{ product.stock }} </p>
+        <p>Available: {{ product.is_available }} </p>
+
+        <a class="btn" href="{% url 'product_detail' product.slug %}">View Details</a>
+        <a class="btn" href="{% url 'product_detail' product.slug %}">Add to Cart</a>
+        </div>
+
+        
+    </div>    
+
+    {% endfor %}
+    </div>
+    
+
+</body>
+</html>

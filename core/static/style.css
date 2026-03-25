@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    margin: 2%;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.card {
+    background-color: rgb(207, 206, 206);
+    border: 2px solid lightgray;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.details {
+   
+    padding: 10px;
+   
+}
+
+.card img, .card-detail img{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 10px 10px 0 0;
+}
+
+.btn{
+    text-decoration: none;
+    padding: 5px;
+    background-color: blue;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid gray;
+
+   
+}
+
+.card-detail img {
+    width: 500px;
+    height: 300px;
+}

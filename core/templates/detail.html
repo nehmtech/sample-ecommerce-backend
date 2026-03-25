@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Details for {{ product.name }} </h2>
+
+    <div class="card-detail">
+        <img style="width: 400px;" src = "{{ product.image.url }}" alt = "{{ product.name }}">  
+        
+        <div class="details">
+        <p>Name: {{ product.name }} </p>
+        <p>Name: {{ product.description }} </p>
+        <p>Price: {{ product.price }} </p>
+        <p>Stock: {{ product.stock }} </p>
+        <p>Available: {{ product.is_available }} </p>
+
+        <!-- <a class="btn" href="{% url 'product_detail' product.slug %}">View Details</a> -->
+        <a class="btn" href="/">Return home</a>
+        </div>
+
+        
+    </div>    
+</body>
+</html>
