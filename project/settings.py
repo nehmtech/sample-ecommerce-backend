@@ -28,11 +28,11 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = os.environ.get("SECRET_KEY")
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['sample-ecommerce-backend-production.up.railway.app']
+ALLOWED_HOSTS = ['sample-ecommerce-backend-production.up.railway.app', '*.railway.app']
 
-SITE_URL = 'http://127.0.0.1:8000'
+SITE_URL = 'sample-ecommerce-backend-production.up.railway.app'
 FRONTEND_URL = 'https://sample-ecommerce-frontend-production.up.railway.app'
 
 
