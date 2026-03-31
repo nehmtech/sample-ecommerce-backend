@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'rest_framework',
+    'staticfiles',
     
     'corsheaders',
     
@@ -94,7 +95,7 @@ WSGI_APPLICATION = 'project.wsgi.application'
 # }
 
 DATABASES = {
-    'default': dj_database_url.parse("postgresql://postgres:sJtqSCZomOFGCYPGcGoBOiMEBSCPEAho@hopper.proxy.rlwy.net:17445/railway")
+    'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
 }
 
 # Rest framework
