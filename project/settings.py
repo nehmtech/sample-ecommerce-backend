@@ -33,7 +33,7 @@ DEBUG = False
 ALLOWED_HOSTS = ['sample-ecommerce-backend-production.up.railway.app']
 
 SITE_URL = 'http://127.0.0.1:8000'
-FRONTEND_URL = 'http://localhost:3000'
+FRONTEND_URL = 'https://sample-ecommerce-frontend-production.up.railway.app'
 
 
 # Application definition
@@ -152,8 +152,8 @@ MEDIA_ROOT = BASE_DIR / 'media'
 
 
 CORS_ALLOWED_ORIGINS = [
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
+    "https://sample-ecommerce-frontend-production.up.railway.app",
+
 ]
 
 
