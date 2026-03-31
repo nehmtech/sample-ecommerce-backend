@@ -32,7 +32,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = ['sample-ecommerce-backend-production.up.railway.app', '*.railway.app']
 
-SITE_URL = 'sample-ecommerce-backend-production.up.railway.app'
+SITE_URL = 'https://sample-ecommerce-backend-production.up.railway.app'
 FRONTEND_URL = 'https://sample-ecommerce-frontend-production.up.railway.app'
 
 
